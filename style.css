@@ -15,14 +15,26 @@
     margin-bottom: 40px;
 }
 
+.hide-desktop-only {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .col {
         width: 45%;
+    }
+
+    .hide-desktop-only {
+        display: block;
     }
 }
 
 @media (max-width: 480px) {
     .col {
         width: 100%;
+    }
+
+    .hide-mobile-only {
+        display: none;
     }
 }
