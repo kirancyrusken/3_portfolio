@@ -9,14 +9,38 @@
 }
 
 .col {
-    background-color: darkgoldenrod;
-    min-height: 256px;
+    margin-top: 40px;
     width: 30%;
     margin-bottom: 40px;
 }
 
+.col img {
+    width: 100%;
+    height: auto;
+}
+
 .hide-desktop-only {
     display: none;
+}
+.link {
+    width: 1024px;
+    min-height: 30px;    
+    text-align: right;
+    padding-top: 10px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.link a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: brown;
+}
+
+.pugImage {
+    width: auto;
+    height: 99vh;
 }
 
 @media (max-width: 768px) {
