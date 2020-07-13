@@ -22,6 +22,26 @@
 .hide-desktop-only {
     display: none;
 }
+.link {
+    width: 1024px;
+    min-height: 30px;    
+    text-align: right;
+    padding-top: 10px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.link a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: brown;
+}
+
+.pugImage {
+    width: auto;
+    height: 99vh;
+}
 
 @media (max-width: 768px) {
     .col {
