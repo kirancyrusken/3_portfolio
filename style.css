@@ -11,6 +11,8 @@ a {
     background-color: gray;
     margin: 20px;
     min-height: 100px;
+    position: fixed;
+    width: 100%;
 }
 
 header {
@@ -47,10 +49,10 @@ nav a{
     min-height: 540px;
     max-width: 1024px;
     margin: auto;
-    background-color: aquamarine;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 150px;
 }
 
 .col {
@@ -84,7 +86,7 @@ nav a{
     min-height: 30px;    
     text-align: right;
     padding-top: 10px;
-    background-color: aquamarine;
+    background-color: goldenrod;
     margin: auto;
     margin-top: 10px;
 }
