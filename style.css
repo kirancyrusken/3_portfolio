@@ -41,14 +41,14 @@ nav {
 }
 
 nav a{
-    border: 3px solid white;
+    border: 1px solid white;
     padding: 7px;
     margin-right: 10px;
 }
 
 .container {
     min-height: 540px;
-    width: 1080px;
+    max-width: 1080px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -83,7 +83,7 @@ nav a{
 }
 
 .link {
-    width: 1024px;
+    max-width: 1080px;
     min-height: 30px;    
     text-align: right;
     padding-top: 10px;
@@ -112,11 +112,23 @@ nav a{
         display: block;
     }
 
-    .link {
+    .header-container{
+        position: relative;
+    }
+
+    header, nav a {
+        display: block;
+        text-align: center;
         width: 100%;
     }
 
+    .logo{
+        padding: 30px;
+    }
 
+    .container{
+        padding-top: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -126,9 +138,5 @@ nav a{
 
     .hide-mobile-only {
         display: none;
-    }
-
-    .link {
-        width: 100%;
     }
 }
