@@ -1,3 +1,6 @@
+html, body {
+    width: 100%;
+}
 body {
     background-color: #EBEBEB;
 }
@@ -9,14 +12,13 @@ a {
 
 .header-container {
     background-color: gray;
-    margin: 20px;
     min-height: 100px;
     position: fixed;
     width: 100%;
 }
 
 header {
-    max-width: 1024px;
+    max-width: 1080px;
     min-height: inherit;
     margin: auto;
     display: flex;
@@ -27,7 +29,7 @@ header {
 .logo {
     font-family: 'Asap', sans-serif;
     color: white;
-    margin-left: 20px;
+    margin-left: 7px;
 }
 
 span {
@@ -36,7 +38,6 @@ span {
 
 nav {
     color: white;
-    
 }
 
 nav a{
@@ -47,7 +48,7 @@ nav a{
 
 .container {
     min-height: 540px;
-    max-width: 1024px;
+    width: 1080px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -114,6 +115,8 @@ nav a{
     .link {
         width: 100%;
     }
+
+
 }
 
 @media (max-width: 480px) {
