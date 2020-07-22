@@ -1,3 +1,6 @@
+html, body {
+    width: 100%;
+}
 body {
     background-color: #EBEBEB;
 }
@@ -9,14 +12,13 @@ a {
 
 .header-container {
     background-color: gray;
-    margin: 20px;
     min-height: 100px;
     position: fixed;
     width: 100%;
 }
 
 header {
-    max-width: 1024px;
+    max-width: 1080px;
     min-height: inherit;
     margin: auto;
     display: flex;
@@ -27,7 +29,7 @@ header {
 .logo {
     font-family: 'Asap', sans-serif;
     color: white;
-    margin-left: 20px;
+    margin-left: 7px;
 }
 
 span {
@@ -36,18 +38,21 @@ span {
 
 nav {
     color: white;
-    
 }
 
-nav a{
-    border: 3px solid white;
+nav a, .mobile-menu-item{
+    border: 1px solid white;
     padding: 7px;
     margin-right: 10px;
 }
 
+.mob-wrapper{
+    display: none;
+}
+
 .container {
     min-height: 540px;
-    max-width: 1024px;
+    max-width: 1080px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -82,7 +87,7 @@ nav a{
 }
 
 .link {
-    width: 1024px;
+    max-width: 1080px;
     min-height: 30px;    
     text-align: right;
     padding-top: 10px;
@@ -111,8 +116,48 @@ nav a{
         display: block;
     }
 
-    .link {
+    .header-container{
+        position: relative;
+    }
+
+    header, nav a {
+        text-align: center;
         width: 100%;
+    }
+
+    nav {
+        display: none;
+        
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 20px;
+    }
+
+    .mobile-menu-image{
+        display: inline-block;
+        width: 40px;
+    }
+
+    .mobile-menu-items{
+        display: none;
+        position: absolute;
+    }
+
+    .mobile-menu-item{
+        display: block;
+        background-color: goldenrod;
+        padding: 15px 30px;
+        margin-left: -95px;
+    }
+
+    .logo{
+        padding: 30px;
+    }
+
+    .container{
+        padding-top: 15px;
     }
 }
 
@@ -123,9 +168,5 @@ nav a{
 
     .hide-mobile-only {
         display: none;
-    }
-
-    .link {
-        width: 100%;
     }
 }
